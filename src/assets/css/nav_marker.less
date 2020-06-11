@@ -1,0 +1,156 @@
+@import "./main.less";
+
+#marker {
+    height: 0.125rem;
+    background: white !important;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 7.5rem;
+    z-index: 2;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+#main li:nth-child(1):hover ul div {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+#main li:nth-child(1):hover~#marker {
+    -webkit-transform: translate(0px, 0);
+    -moz-transform: translate(0px, 0);
+    -ms-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+    box-shadow: 0 5px 12px #eee;
+}
+
+#main li:nth-child(2):hover ul div {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+#main li:nth-child(2):hover~#marker {
+    -webkit-transform: translate(7.5rem, 0);
+    -moz-transform: translate(7.5rem, 0);
+    -ms-transform: translate(7.5rem, 0);
+    transform: translate(7.5rem, 0);
+    box-shadow: 0 5px 12px #eee;
+}
+
+#main li:nth-child(3):hover ul div {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+#main li:nth-child(3):hover~#marker {
+    -webkit-transform: translate(15rem, 0);
+    -moz-transform: translate(15rem, 0);
+    -ms-transform: translate(15rem, 0);
+    transform: translate(15rem, 0);
+    box-shadow: 0 5px 12px #eee;
+}
+
+#main li:nth-child(4):hover ul div {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+#main li:nth-child(4):hover~#marker {
+    -webkit-transform: translate(22.5rem, 0);
+    -moz-transform: translate(22.5rem, 0);
+    -ms-transform: translate(22.5rem, 0);
+    transform: translate(22.5rem, 0);
+    box-shadow: 0 5px 12px #eee;
+}
+
+#main li:nth-child(5):hover ul div {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+#main li:nth-child(5):hover~#marker {
+    -webkit-transform: translate(30rem, 0);
+    -moz-transform: translate(30rem, 0);
+    -ms-transform: translate(30rem, 0);
+    transform: translate(30rem, 0);
+    box-shadow: 0 5px 12px #eee;
+}
+
+#main li:nth-child(6):hover ul div {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+#main li:nth-child(6):hover~#marker {
+    -webkit-transform: translate(37.5rem, 0);
+    -moz-transform: translate(37.5rem, 0);
+    -ms-transform: translate(37.5rem, 0);
+    transform: translate(37.5rem, 0);
+    box-shadow: 0 5px 12px #eee;
+}
+
+#main li:nth-child(7):hover ul div {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+#main li:nth-child(7):hover~#marker {
+    -webkit-transform: translate(45rem, 0);
+    -moz-transform: translate(45rem, 0);
+    -ms-transform: translate(45rem, 0);
+    transform: translate(45rem, 0);
+    box-shadow: 0 5px 12px #eee;
+}
+
+#nav_content {
+    width: 100%;
+    height: 22.5rem;
+    // opacity:1;
+    background-image: linear-gradient(rgba(6, 19, 106, .8) 5%, rgba(3, 10, 57, .8) 90%, rgba(6, 19, 106, 1));
+    position: absolute;
+    top: 170px;
+    left: 0;
+
+    .nav_content {
+        width: 75rem;
+        height: 100%;
+        // background: white;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -37.5rem;
+
+    }
+}
+
+
+.slide-fade-enter-active {
+    transition: all .5s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+    transform: translateX(10px);
+    opacity: 0;
+}
